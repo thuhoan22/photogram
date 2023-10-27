@@ -12,6 +12,10 @@ header {
     position: relative;
     padding: 26px 90px;
 
+    @include respond-below ($screen-md) {
+      padding: 26px 30px;
+    }
+
     &:before {
       position: absolute;
       top: 50%;

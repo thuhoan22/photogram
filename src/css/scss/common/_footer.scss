@@ -7,6 +7,10 @@
   width: 100%;
   background-color: $black;
 
+  @include respond-below ($screen-md) {
+    display: none;
+  }
+
   &-content {
     position: relative;
     display: flex;
