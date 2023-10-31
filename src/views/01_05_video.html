@@ -1,0 +1,60 @@
+@@include('./include/head.html',{"title": "Main : Photogram", "list_title": "Main : Main"})
+
+<body data-pagestatus="new : 2023.10.24">
+	<div class="wrap main_page">
+    <!-- [D] LOADER -->
+    @@include('./include/loader.html')
+    <!-- //[D] LOADER -->
+
+		<!--[D] HEADER -->
+    @@include('./include/header.html')
+		<!--//[D] HEADER -->
+
+		<!-- [D] CONTENTS -->
+		<main id="content" class="container">
+      <!-- Aside column -->
+      <div class="aside-column">
+        <div class="sns-area">
+          <ul class="sns-list">
+            <li class="sns-item"><a href="#none" target="_blank">Fb</a></li>
+            <li class="sns-item"><a href="#none" target="_blank">Ins</a></li>
+            <li class="sns-item"><a href="#none" target="_blank">Pin</a></li>
+            <li class="sns-item"><a href="#none" target="_blank">Tw</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- END Aside column -->
+
+      <!-- Main content -->
+      <section class="section-main">
+        <div class="slider video-area">
+          <div class="video">
+            <video autoplay="" playsinline="" loop="" muted="" class="bg-video">
+              <source src="../img/video/video-01.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="overlay"></div>
+          <div class="thumb-info center">
+            <h2 class="title"><a href="#none">Oh the places you'll go</a></h2>
+            <p class="text-desc">Once a year, go someplace you've never been before.</p>
+            <a href="#none" class="btn view-btn">Start Explore</a>
+          </div>
+          <div class="cirle-dec"></div>
+        </div>
+      </section>
+		</main>
+		<!-- // [D] CONTENTS -->
+
+		<!--[D] FOOTER -->
+    @@include('./include/footer.html')
+		<!--// [D] FOOTER -->
+
+    <!--[D] SIDEBAR -->
+    @@include('./include/sidebar.html')
+    <!--// [D] SIDEBAR -->
+    <div class="dimmed"></div>
+	</div>
+
+@@include('./include/script.html')
+</body>
+</html>
