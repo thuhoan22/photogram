@@ -340,6 +340,41 @@
     };
   };
 
+  // video------------------
+  var videoBox =function() {
+    if ($('.video-area').length > 0) {
+      function videoint() {
+        var bvmc = $('.video'),
+            vch = $('.bg-video');
+
+        $('.video-area').height(bvmc.height());
+
+        if ($(window).width() > 1024) {
+          if ($('.video-area').length > 0) {
+            if (bvmc.height() / 9 * 16 > bvmc.width()) {
+            } else {
+
+            }
+          }
+        } else if ($(window).width() < 760) {
+          $('.video-area').height(bvmc.height());
+          bvfc.height(bvmc.height());
+        } else {
+          $('.video-area').height(bvmc.height());
+          bvfc.height(bvmc.height());
+        }
+        vch.css("width", $(window).width() + "px");
+        vch.css("height", Number(720 / 1280 * $(window).width()) + "px");
+        if (vch.height() < $(window).height()) {
+          vch.css("height", $(window).height() + "px");
+          vch.css("width", Number(1280 / 720 * $(window).height()) + "px");
+        }
+      }
+
+      videoint();
+    }
+  };
+
   $(function () {
 
   });
@@ -354,5 +389,6 @@
     carousel2Swiper();
     sliderSwiper();
     gridSwiper();
+    videoBox();
   });
 })(window, window.jQuery);
